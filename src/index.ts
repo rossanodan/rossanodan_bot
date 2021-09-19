@@ -1,10 +1,10 @@
-require('dotenv').config();
+import 'dotenv/config';
 
-const { Telegraf } = require('telegraf');
+import { Telegraf } from 'telegraf';
 
-const start = require('./commands/start');
-const whoami = require('./commands/whoami');
-const website = require('./commands/website');
+import start from './commands/start';
+import whoami from './commands/whoami';
+import website from './commands/website';
 
 const token = process.env.BOT_TOKEN;
 if (token === undefined) {
